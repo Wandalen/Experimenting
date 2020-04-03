@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.plot.ly/plotly-latest.js"></script>
+</head>
+<body>
+<div id='myDiv'></div>
+<script>
+    var data =
+        [
+            {
+                z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
+                type: 'heatmap',
+                colorscale: colorscaleValue,
+                zmin: 15,
+                zmax: 95,
+
+            }
+        ];
+
+    var colorscaleValue = [[-3, 102 ], [-20, 40], [-1, 50]];
+
+    Plotly.newPlot( 'myDiv', data );
+
+</script>
+</body>
+</html>
